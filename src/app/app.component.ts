@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from './app.service';
+import { bookService } from './book.service';
 
 @Component({
   selector: 'app-root',
@@ -22,10 +23,10 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
 
-    this.title = 'Hello asdfasdf!';
+    this.title = 'Hello World!';
     this.links = [
-      { text: 'Lucas', href: 'http://google.com' },
-      { text: 'Lohn', href: 'http://google.com' },
+      { text: 'Jessica', href: 'http://google.com' },
+      { text: 'John', href: 'http://google.com' },
       { text: 'Mary', href: 'http://google.com' },
       { text: 'Link 4', href: 'http://google.com' },
       { text: 'Link 4', href: 'http://google.com' },
