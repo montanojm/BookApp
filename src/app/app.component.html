@@ -71,6 +71,7 @@
                 flex:1;
                 float:right;
             }
+
             nav.main-nav ul {
                 list-style-type:none;
                 background-color:#CC0000;
@@ -104,6 +105,7 @@
                 list-style-type:none;
             }
             .main-sidebar li {
+
             }
             .main-sidebar ul li:last-child {
                 
@@ -157,6 +159,7 @@
             .main-subnav li {
                 width:100% !important;
             }
+
             footer p {
                 text-align:center;
                 color:#FFF;
@@ -209,6 +212,7 @@
             </header>
             <div class="main-content">
                 <button (click)="toggleLink()">Toggle</button>
+                <router-outlet></router-outlet>
                 <nav class="main-nav">
                     <ul>
                         <li>Link
@@ -255,8 +259,7 @@
                 </div>
                 <aside class="main-sidebar">
                     <ul class="side-nav">
-                        <li class="sidebar-gradient" *ngFor="let link of links"><a href={{link.href}}>{{link.text}}</a></li>
-                        
+                        <li class="sidebar-gradient" *ngFor="let link of links"><a href={{link.href}}>{{link.text}}</a></li>     
                     </ul>
                 </aside>
                 <div class="content-right">
