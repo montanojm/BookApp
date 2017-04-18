@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    goToCreate(){
+      console.log('go to create...');
+      this.router.navigate(['create']);
+    } 
+
+    deleteBook(id:sting){
+      console.log('')
+      this.BookService.deleteBook(id);  
+    }
 
   ngOnInit() {
   }
